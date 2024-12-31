@@ -23,12 +23,11 @@ class _MainscreenState extends State<Mainscreen> {
       isLoading = false;
       setState(() {});
     } catch (e) {
+      isLoading = false;
       print(e);
     }
   }
 
-//api url
-//https://raw.githubusercontent.com/subedisuraj1/flutter_dummy_api/refs/heads/main/funfacts.json
   @override
   void initState() {
     getData();
